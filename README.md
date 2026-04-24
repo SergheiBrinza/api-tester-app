@@ -22,20 +22,20 @@
 
 **API Key Tester** is a lightweight mobile application designed for AI infrastructure engineers who manage multiple inference endpoints across local and cloud providers.
 
-Built as a single-file PWA with a native Android APK wrapper, the app provides instant API key validation, model enumeration, and inference speed benchmarking — all from a phone.
+Built as a single-file PWA with a native Android APK wrapper, the app provides instant API key validation, model enumeration, and inference speed benchmarking, all from a phone.
 
 ---
 
 ## Background
 
-I deploy and maintain local AI inference servers — **vLLM**, **Ollama**, **Text Generation Inference** — on multi-GPU clusters (3x RTX 3090). I integrate large language models into real-world production systems:
+I deploy and maintain local AI inference servers, **vLLM**, **Ollama**, **Text Generation Inference**, on multi-GPU clusters (3x RTX 3090). I integrate large language models into real-world production systems:
 
-- **Scientific research** — data analysis, experiment automation, NLP pipelines
-- **Robotic production lines** — AI modules for real-time quality control and decision-making
-- **Warehouse management** — intelligent routing, predictive inventory analytics
-- **Enterprise document management** — automated classification, data extraction, report generation
-- **Engineering documentation** — recognition and indexing of technical drawings, CAD database search
-- **Corporate databases** — natural language to SQL, AI-powered analytics
+- **Scientific research**, data analysis, experiment automation, NLP pipelines
+- **Robotic production lines**, AI modules for real-time quality control and decision-making
+- **Warehouse management**, intelligent routing, predictive inventory analytics
+- **Enterprise document management**, automated classification, data extraction, report generation
+- **Engineering documentation**, recognition and indexing of technical drawings, CAD database search
+- **Corporate databases**, natural language to SQL, AI-powered analytics
 
 When you manage dozens of API endpoints, you need one tool in your pocket to check at any moment: is the server up, is the key valid, what models are loaded, what's the generation speed.
 
@@ -53,7 +53,7 @@ Query `/v1/models` to list all available models on any server. Tap a model to se
 Run N sequential requests against a selected model. Get aggregated stats: average / min / max latency, mean generation speed, total token throughput. Useful for comparing quantizations, tuning vLLM batch sizes, or evaluating providers.
 
 ### Key Manager
-Save API keys with descriptive labels. Switch between servers in one tap. All data stored locally on-device — no server-side storage, no telemetry, no analytics.
+Save API keys with descriptive labels. Switch between servers in one tap. All data stored locally on-device, no server-side storage, no telemetry, no analytics.
 
 ### Provider Presets
 One-tap switching between preconfigured providers:
@@ -83,7 +83,7 @@ Ollama &nbsp;·&nbsp; vLLM &nbsp;·&nbsp; OpenAI &nbsp;·&nbsp; Anthropic &nbsp;
 | **Architecture** | Single-file PWA (HTML + CSS + JS), zero external dependencies |
 | **Android** | Native APK via WebView wrapper, API 21+ (Android 5.0+) |
 | **Protocols** | OpenAI Chat Completions API, Anthropic Messages API (auto-detected) |
-| **Storage** | `localStorage` only — keys never leave the device |
+| **Storage** | `localStorage` only, keys never leave the device |
 | **Theme** | Dark UI with gold accent (`#D4AF37`), optimized for AMOLED |
 | **Offline** | Service Worker caching for offline access |
 
@@ -108,3 +108,7 @@ All rights reserved.
 <p align="center">
   <sub>Built for engineers who run their own AI infrastructure</sub>
 </p>
+
+---
+
+Author: Serghei Brinza, AI engineer. Other projects: [github.com/SergheiBrinza](https://github.com/SergheiBrinza)
